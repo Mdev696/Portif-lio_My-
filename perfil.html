@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfólio — Seu Nome | TI</title>
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="description" content="Portfólio profissional de TI — desenvolvedor, administrador de sistemas, etc.">
+
+</head>
+
+<body>
+    <div class="site">
+
+        <!-- Header -->
+        <header>
+            <a class="brand" href="#">
+                <div class="logo">DEV</div>
+                <div>
+                    <div style="font-weight:800">Max</div>
+                    <div style="font-size:13px;color:var(--muted)">Desenvolvedor / Analista de Redes</div>
+                </div>
+            </a>
+
+            <nav aria-label="menu">
+                <a href="#projetos">Projetos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-left">
+                <h1 id="hero-title">Olá eu sou <span style="color:var(--accent)">Max</span><br><small
+                        style="font-weight:600;color:var(--muted)">Desenvolvedor front-end / DevOps / Analista de
+                        redes</small></h1>
+                <p class="lead">Crio aplicações seguras — front-end moderno, back-end e
+                    processos automatizados.</p>
+                <div class="cta-row">
+                    <a class="btn" href="#contato">Solicitar Orçamento</a>
+                    <a class="btn-ghost" href="#projetos">Ver Projetos</a>
+                    <a class="btn-ghost" href="Curriculo.pdf" download>Baixar CV</a>
+                </div>
+            </div>
+
+            <aside class="hero-right" aria-label="contato rápido">
+                <div class="avatar" title="Foto/Avatar"><img src="IMG/FOTO.jpg" alt=""></div>
+                <div style="font-weight:700;margin-bottom:6px">Max Ferreira Da Silva</div>
+                <div style="color:var(--muted);font-size:14px;margin-bottom:8px">PJ • CLT</div>
+                <a class="btn" href="https://wa.me/5521997688990?text=Olá%20Estou%20interessado%20em%20seus%20serviços"
+                    target="_blank" rel="noopener">💬 WhatsApp</a>
+                <div style="margin-top:10px;color:var(--muted);font-size:13px">📧 <a href="mailto:aubras@aubras.com.br"
+                        style="color:inherit;text-decoration:underline">maxferreira.dsilva@gmail.com</a></div>
+            </aside>
+        </section>
+
+        <!-- Skills -->
+        <section id="sobre" aria-labelledby="sobre-title">
+            <h2 class="section-title" id="sobre-title">Sobre / Skills</h2>
+            <p class="lead">Pratico, aprendo e faço aquilo que está ao meu alcance para agradar o cliente</p>
+            <div class="skills" style="margin-top:10px">
+                <div class="skill">JavaScript / Node.js</div>
+                <div class="skill">React / GIT</div>
+                <div class="skill">HTML / CSS</div>
+                <div class="skill">Python / SQL</div>
+
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projetos" aria-labelledby="projetos-title">
+            <h2 class="section-title" id="projetos-title">Projetos Recentes</h2>
+            <div class="grid" style="margin-top:12px">
+
+                <!-- Projeto 1 -->
+                <article class="card" aria-labelledby="p1">
+                    <img src="IMG/aubras.png" alt="Projeto 1 preview">
+                    <h3 id="p1">Homepage de uma empresa de auditoria</h3>
+                    <p>Homepage de auditoria, cliente pediu para criar uma frente mostrando os serviços aplicados em
+                        sua empresa 
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Html</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">css</span>
+                    </div>
+
+                </article>
+
+                <!-- Projeto 2 -->
+                <article class="card" aria-labelledby="p2">
+                    <img src="IMG/automacao.png" alt="Projeto 2 preview">
+                    <h3 id="p2">Automação para testar elementos de Rede Telecom</h3>
+                    <p>Automação ara testar elementos de Rede Telecom. Rede Móvel, Fixa e Anel comutado
+                    </p>
+                    <div class="tags">
+                        <span class="tag">SQL Lite</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Html</span>
+                    </div>
+
+                </article>
+
+                <!-- Projeto 3 -->
+                <article class="card" aria-labelledby="p3">
+                    <img src="IMG/Cadastro.png" alt="Projeto 3 preview">
+                    <h3 id="p3">Sistema de Cadastro</h3>
+                    <p>Cadastro de casos de uma operação</p>
+                    <div class="tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Html</span>
+                        <span class="tag">Css</span>
+                    </div>
+
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contato" aria-labelledby="contato-title">
+            <h2 class="section-title" id="contato-title">Fale comigo</h2>
+            <div style="display:flex;gap:18px;flex-wrap:wrap">
+                <form class="contact" id="contactForm" style="flex:1;min-width:260px">
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                    <select id="servico" name="servico" required>
+                        <option value="">Selecione o serviço</option>
+                        <option>Desenvolvimento Web</option>
+                        <option>Automação</option>
+                        <option>Frameworks</option>
+                    </select>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Mensagem"></textarea>
+                    <div style="display:flex;gap:8px;align-items:center">
+                        <button type="submit">Enviar</button>
+                        <a class="btn-ghost"
+                            href="https://wa.me/5521997688990?text=Olá%2C%20gostaria%20de%20um%20orçamento"
+                            target="_blank">💬 WhatsApp</a>
+                    </div>
+                </form>
+
+                <aside style="min-width:220px;color:var(--muted);">
+                    <h3 style="margin-bottom:8px">Contato rápido</h3>
+                    <p>📧 <a href="mailto:aubras@aubras.com.br"
+                            style="color:inherit;text-decoration:underline">infortech022@gmail.com</a></p>
+                    <p><a href="https://github.com/Mdev696" target="_blank">🐙 GitHub</a></p>
+                    <p>📱 <a href="https://wa.me/55219972413870" target="_blank"
+                            style="color:inherit;text-decoration:underline">219972413870 (WhatsApp)</a></p>
+                    <p style="margin-top:12px">📍 Rio de Janeiro, RJ</p>
+                </aside>
+            </div>
+        </section>
+
+        <footer>© <span id="year"></span> Max Ferreira da Silva — Portfólio de TI</footer>
+    </div>
+
+    <script>
+        // Atualiza ano do footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Simples handler do form: abre WhatsApp com mensagem formatada
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const nome = encodeURIComponent(document.getElementById('nome').value || 'Contato');
+            const email = encodeURIComponent(document.getElementById('email').value || '');
+            const servico = encodeURIComponent(document.getElementById('servico').value || '');
+            const msg = encodeURIComponent(document.getElementById('mensagem').value || '');
+            const numero = '5521999932815'; // ajuste
+            const texto = `Olá%20meu%20nome%20é%20${nome}.%0AEmail:%20${email}%0AServiço:%20${servico}%0AMensagem:%20${msg}`;
+            const url = `https://wa.me/${numero}?text=${texto}`;
+            window.open(url, '_blank');
+        });
+    </script>
+</body>
+
+</html>
